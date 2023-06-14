@@ -1,3 +1,16 @@
+# unreal log files
+*/Saved/*
+
+# unreal autosaves
+*/Saved/Autosaves
+
+# unreal crash reports
+*/Saved/Crashes
+*/Saved/Config/CrashReportClient
+
+# unreal user project settings
+*/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini
+
 # Visual Studio 2015 user specific files
 .vs/
 
@@ -72,3 +85,6 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Builds
+/Tests
