@@ -6,10 +6,10 @@ If you have a source built version of UE5.1, try the other template - it comes w
 
 =Introduction
 
-*
+
 Note to self: remove keys before publishing
 Do not remove this note, you'll forget next time
-*
+
 
 Get help from our discord server any time: https://discord.gg/ANt8bbh3rA
 
