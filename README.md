@@ -2,22 +2,19 @@
 
 For the Epic Launcher version of Unreal Engine 5.1.
 
-If you have a source built version of UE5.1, try the other template - it comes with a little extra stuff, and is required for Dedicated Servers - https://github.com/Incurian/VR_Template_UE5.1_SB
+If you have a source built version of UE5.1, try the other template - it comes with a little extra stuff, and is required for Dedicated Servers - [VR_Template_UE5.1_SB](https://github.com/Incurian/VR_Template_UE5.1_SB)
 
-=Introduction
+## Introduction
 
+Note to self: remove keys before publishing Do not remove this note, you'll forget next time
 
-Note to self: remove keys before publishing
-Do not remove this note, you'll forget next time
+Get help from our discord server any time: [Discord Server](https://discord.gg/ANt8bbh3rA)
 
+VR is a hard problem. There are too many ways to move and too few ways to stop the player from moving; any solutions need to be computationally cheap and not make the player sick. VR gives you effortless presence and intuitive interactions, but it makes breaks from reality all the more jarring. Making the world too much like reality can backfire because the player's ability to interact with it is significantly handicapped compared to reality; perfect simulations that don't feel right are counter-productive. It needs to be as realistic as can be experienced properly, but not one iota more.
 
-Get help from our discord server any time: https://discord.gg/ANt8bbh3rA
+The solutions are made more difficult by my decision to use blueprint scripting exclusively, but I think it's worthwhile because blueprints are surprisingly powerful considering how easy they are to use. And I don't want to learn C++.
 
-VR is a hard problem.  There are too many ways to move and too few ways to stop the player from moving; any solutions need to be computationally cheap and not make the player sick.  VR gives you effortless presence and intuitive interactions, but it makes breaks from reality all the more jarring.  Making the world too much like reality can backfire because the player's ability to interact with it is significantly handicapped compared to reality; perfect simulations that don't feel right are counter-productive.  It needs to be as realistic as can be experienced properly, but not one iota more.
-
-The solutions are made more difficult by my decision to use blueprint scripting exclusively, but I think it's worthwhile because blueprints are surprisingly powerful considering how easy they are to use.  And I don't want to learn C++.
-
-As you look through this project you'll have questions about the choices I made.  Here are the answers in advance:
+As you look through this project you'll have questions about the choices I made. Here are the answers in advance:
 
 a) I don't know a lot of computer science and my programming skill is minimal.
 b) I didn't think of it.
@@ -37,18 +34,18 @@ o) I was optimizing for a different system.
 p) I did what?
 q) I couldn't think of a better way using blueprints.
 
-Please report bugs or opportunities to improve the blueprints.  I'm begging you.
+Please report bugs or opportunities to improve the blueprints. I'm begging you.
 
-This will be more of a quick-start guide than a detailed manual for each function.  I will try to make the comments within the blueprints explanatory, and make it easy to switch common options.  The idea is that you will know that a certain function exists and where, if not necessarily how it works.  If you have any questions please ask.
+This will be more of a quick-start guide than a detailed manual for each function. I will try to make the comments within the blueprints explanatory, and make it easy to switch common options. The idea is that you will know that a certain function exists and where, if not necessarily how it works. If you have any questions please ask.
 
-=Framework
+## Framework
 
-Ensure these are selected either in ProjectSettings->Maps&Modes, or in WorldSettings->GameModeOverride
-Note that there are custom collision channels, and they are required.  About half of all bugs are from improper collision settings.
+Ensure these are selected either in `ProjectSettings->Maps&Modes`, or in `WorldSettings->GameModeOverride`. Note that there are custom collision channels, and they are required. About half of all bugs are from improper collision settings.
 
-refs:
-https://docs.unrealengine.com/5.1/en-US/gameplay-framework-quick-reference-in-unreal-engine/
-https://docs.unrealengine.com/5.1/en-US/game-mode-and-game-state-in-unreal-engine/
+References:
+- [Gameplay Framework Quick Reference in Unreal Engine](https://docs.unrealengine.com/5.1/en-US/gameplay-framework-quick-reference-in-unreal-engine/)
+- [Game Mode and Game State in Unreal Engine](https://docs.unrealengine.com/5.1/en-US/game-mode-and-game-state-in-unreal-engine/)
+
 
 -Game Mode: GMode_22
 Accepts new connections from controllers, spawns a pawn, orders controller to possess pawn
