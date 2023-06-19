@@ -1,5 +1,34 @@
 # VR_Template_UE5.1_EL
 
+# Table of Contents
+
+- [VR_Template_UE5.1_EL](#vr_template_ue51_el)
+  - [Introduction](#introduction)
+  - [Framework](#framework)
+  - [Game Mode: GMode_22](#game-mode-gmode_22)
+  - [Player Controller: PC_VR_22](#player-controller-pc_vr_22)
+  - [Game Instance: GInstance_22](#game-instance-ginstance_22)
+  - [Pawn: Pawn_VR_22](#pawn-pawn_vr_22)
+    - [Scenes](#scenes)
+    - [Events](#events)
+    - [Incomplete list of potential Pawn behavior](#incomplete-list-of-potential-pawn-behavior)
+  - [Buttons](#buttons)
+    - [Button Component](#button-component)
+    - [Routing Singleton](#routing-singleton)
+    - [Remote Target Helper](#remote-target-helper)
+    - [Any Remote Target Actor](#any-remote-target-actor)
+  - [Items](#items)
+    - [Item Coordinator](#item-coordinator)
+    - [Item Subcomponent [logic] (SCL)](#item-subcomponent-logic-scl)
+    - [SCL States](#scl-states)
+    - [SCL Relations](#scl-relations)
+    - [SCL Functions](#scl-functions)
+    - [Other SCL Configuration](#other-scl-configuration)
+    - [HAND PLACEMENT AID](#hand-placement-aid)
+    - [MANIPULATION CONSTRAINT](#manipulation-constraint)
+    - [ATTACHMENT REFERENCE](#attachment-reference)
+
+
 For the Epic Launcher version of Unreal Engine 5.1.
 
 If you have a source built version of UE5.1, try the other template - it comes with a little extra stuff, and is required for Dedicated Servers - [VR_Template_UE5.1_SB](https://github.com/Incurian/VR_Template_UE5.1_SB)
@@ -16,23 +45,26 @@ The solutions are made more difficult by my decision to use blueprint scripting 
 
 As you look through this project you'll have questions about the choices I made. Here are the answers in advance:
 
-a) I don't know a lot of computer science and my programming skill is minimal.
-b) I didn't think of it.
-c) I tried it your way but it didn't work exactly the way I wanted.
-d) I was trying to work around a bug which may or may not exist anymore but it's too late to go back.
-e) I don't know a lot of math.
-f) I didn't know I could do that.
-g) It's too computationally expensive the other way.
-h) There are a lot of edge cases and I want player movement to feel as intuitive as the hardware allows.
-i) I definitely sometimes overfit to an edge case and then just leave it because I'm lazy.
-j) I am a visual thinker.
-k) I am just dumb sometimes.
-l) I forget why.
-m) I'm not sure but if I change it the compiler threatens to destroy the universe.
-n) I copied this piece verbatim from a forum post from 2016 that I can't find anymore.
-o) I was optimizing for a different system.
-p) I did what?
-q) I couldn't think of a better way using blueprints.
+<ol type="a">
+  <li>I don't know a lot of computer science and my programming skill is minimal.</li>
+  <li>I didn't think of it.</li>
+  <li>I tried it your way but it didn't work exactly the way I wanted.</li>
+  <li>I was trying to work around a bug which may or may not exist anymore but it's too late to go back.</li>
+  <li>I don't know a lot of math.</li>
+  <li>I didn't know I could do that.</li>
+  <li>It's too computationally expensive the other way.</li>
+  <li>There are a lot of edge cases and I want player movement to feel as intuitive as the hardware allows.</li>
+  <li>I definitely sometimes overfit to an edge case and then just leave it because I'm lazy.</li>
+  <li>I am a visual thinker.</li>
+  <li>I am just dumb sometimes.</li>
+  <li>I forget why.</li>
+  <li>I'm not sure but if I change it the compiler threatens to destroy the universe.</li>
+  <li>I copied this piece verbatim from a forum post from 2016 that I can't find anymore.</li>
+  <li>I was optimizing for a different system.</li>
+  <li>I did what?!</li>
+  <li>I couldn't think of a better way using blueprints.</li>
+</ol>
+
 
 Please report bugs or opportunities to improve the blueprints. I'm begging you.
 
