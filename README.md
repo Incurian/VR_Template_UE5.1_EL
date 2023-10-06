@@ -15,27 +15,7 @@ Get help from our discord server any time: https://discord.gg/ANt8bbh3rA
 
 VR is a hard problem.  There are too many ways to move and too few ways to stop the player from moving; any solutions need to be computationally cheap and not make the player sick.  VR gives you effortless presence and intuitive interactions, but it makes breaks from reality all the more jarring.  Making the world too much like reality can backfire because the player's ability to interact with it is significantly handicapped compared to reality; perfect simulations that don't feel right are counter-productive.  It needs to be as realistic as can be experienced properly, but not one iota more.
 
-The solutions are made more difficult by my decision to use blueprint scripting exclusively, but I think it's worthwhile because blueprints are surprisingly powerful considering how easy they are to use.  And I don't want to learn C++.
-
-As you look through this project you'll have questions about the choices I made.  Here are the answers in advance:
-
-a) I don't know a lot of computer science and my programming skill is minimal.
-b) I didn't think of it.
-c) I tried it your way but it didn't work exactly the way I wanted.
-d) I was trying to work around a bug which may or may not exist anymore but it's too late to go back.
-e) I don't know a lot of math.
-f) I didn't know I could do that.
-g) It's too computationally expensive the other way.
-h) There are a lot of edge cases and I want player movement to feel as intuitive as the hardware allows.
-i) I definitely sometimes overfit to an edge case and then just leave it because I'm lazy.
-j) I am a visual thinker.
-k) I am just dumb sometimes.
-l) I forget why.
-m) I'm not sure but if I change it the compiler threatens to destroy the universe.
-n) I copied this piece verbatim from a forum post from 2016 that I can't find anymore.
-o) I was optimizing for a different system.
-p) I did what?
-q) I couldn't think of a better way using blueprints.
+The solutions are made more difficult by my decision to use blueprint scripting exclusively, but I think it's worthwhile because blueprints are surprisingly powerful considering how easy they are to use.
 
 Please report bugs or opportunities to improve the blueprints.  I'm begging you.
 
